@@ -1,11 +1,11 @@
 // 1. What will be the output of this program
-// it will be i am 10
+// It will be "i am 10" because, in if statement there is no '==' there is only '=' that means value of 'a' is non-zero so it is true.That is why it returned 'i am 11"
 #include <stdio.h>
 int main()
 {
     int a = 10;
-    if (a = 10)
-        printf("i am 10");
+    if (a = 11)
+        printf("i am 11");
 
     else
         printf("i am not 10");
@@ -85,15 +85,11 @@ int main()
 {
     printf("YOU NEED MINIMUM 33 MARKS IN EACH EXAM TO PASS AND AT LEAST 40%% TOTAL TO PASS THE EXAM \n");
 
-    int a;
+    int a , c , b;
     printf("enter the marks of the exam A :\t");
     scanf("%d", &a);
-
-    int b;
     printf("enter the marks of the exam B :\t");
     scanf("%d", &b);
-
-    int c;
     printf("enter the marks of the exam C :\t");
     scanf("%d", &c);
     
@@ -112,3 +108,4 @@ int main()
     else
         printf("you have failed the class");
 }
+
