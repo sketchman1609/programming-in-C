@@ -149,3 +149,102 @@ int main(){
 return 0;
 
 }
+        
+
+// 4. Write a program to find whether a year entered by the user is a leap year or not.Take year as an input from the user.
+
+#include<stdio.h>
+
+int main(){
+
+    int year;
+    printf("enter year:\n");
+    scanf("%d", &year);
+
+    if (year%400==0)
+    {
+        printf("%d is a leap year", year);
+    }
+
+    else if (year%100==0)
+    {
+        printf("%d is not a leap year", year);
+
+    }
+    else if (year%4==0)
+    {
+        printf("%d is a leap year",  year);
+
+    }
+    else{
+        printf("%d ia not a leap year", year);
+    }
+
+
+return 0;
+
+}
+
+
+    
+// 5. Write a program to determine whether a character entered by the user is lowercase or not
+
+
+#include <stdio.h>
+
+int main()
+{
+
+    char c1;
+    printf("entre a character:\n");
+    scanf("%c", &c1);
+
+    if (c1 >= 'a' && c1 <= 'z')
+    {
+        printf("%c given character is in lower case.", c1);
+    }
+    else
+    {
+        printf("%c is in uppercase.", c1);
+    }
+
+    return 0;
+}
+
+// 6. Write a program to find greatest of four numbers entered by the user.
+
+#include<stdio.h>
+
+int main(){
+
+    int a , b , c , d;
+    printf("enter the first number:\n");
+    scanf("%d" , a);
+    printf("enter the second number:\n");
+    scanf("%d" , b);
+    printf("enter the third number:\n");
+    scanf("%d" , c);
+    printf("enter the fourth number:\n");
+    scanf("%d" , d);
+
+    if (a>=b && a>=c && a>=d)
+    {
+        printf("%d is the largest number" ,a);
+    }
+    else if (b>=a && b>=c && b>=d)
+    {
+        printf("%d is the largest number", b);
+    }
+    else if (c>=a && c>=b && c>=d)
+    {
+        printf("%d is the largest number", c);
+    }
+    else
+    {
+    printf("%d is the largest number", d);
+    }
+    
+return 0;
+
+}
+
